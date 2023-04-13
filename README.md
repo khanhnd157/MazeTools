@@ -1,5 +1,5 @@
 # MazeTools
----
+
 
 ## Documentation
 
