@@ -61,7 +61,7 @@ public abstract class Otp
         }
         if (secretKey.Length <= 0)
         {
-            throw new ArgumentException("secretKey empty");
+            throw new ArgumentException(ErrorConstant.ERROR_SECRETKEY_EMPTY);
         }
 
         // when passing a key into the constructor the caller may depend on the reference to the key remaining intact.

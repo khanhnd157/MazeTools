@@ -68,7 +68,7 @@ namespace IZMaze.OTPAuth.Providers
 
             if (key.Length <= 0)
             {
-                throw new ArgumentException("The key must not be empty");
+                throw new ArgumentException(ErrorConstant.ERROR_MEMORYKEY_EMPTY);
             }
 
             _keyLength = key.Length;
@@ -122,7 +122,7 @@ namespace IZMaze.OTPAuth.Providers
         }
 
         /// <summary>
-        /// Create an HMAC object for the specified algorithm
+        /// Create an HMAC object for the specified algorithm: default Sha1
         /// </summary>
         private static HMAC CreateHmacHash(OtpHashMode otpHashMode)
         {
